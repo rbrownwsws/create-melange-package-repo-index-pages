@@ -16,6 +16,8 @@ runs:
       with:
         version-file: "${{ github.action_path }}/.tool-versions"
         ignore-empty-workdir: "true"
+        cache-dependency-glob: |
+          ${{ github.action_path }}/**/*.py.lock
 
     - name: Generate index pages
       shell: bash
