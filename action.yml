@@ -1,0 +1,27 @@
+# $schema:https://json.schemastore.org/github-action.json
+name: "Create index pages for a melange package repo"
+description: "Create index pages for a melange package repo"
+
+inputs:
+  repo-dir:
+    description: "Path to the melange package repo"
+    required: true
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Install uv
+      uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+      with:
+        version: '0.12.3'
+        python-version: '3.14.7'
+
+    - name: Generate index pages
+      shell: bash
+      env:
+        REPO_DIR: ${{ inputs.repo-dir }}
+      run: |
+        set -euo pipefail
+
+        uv run --locked --script ./generate-index-pages.py "${REPO_DIR}"

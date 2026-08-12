@@ -1,0 +1,27 @@
+{% extends "base.html.j2" %}
+{% block title %}Package Repo &mdash; {{ index.name }}{% endblock %}
+{% block content %}
+  <p><a href="../">&larr; back to repo root</a></p>
+
+  <h1>{{ index.name }}</h1>
+
+  {% if index.apkindex %}
+    <p><a href="{{ index.apkindex }}">🗃️ {{ index.apkindex }}</a></p>
+  {% else %}
+    <p>⚠️ APKINDEX not found</p>
+  {% endif %}
+
+  <h2>Packages</h2>
+  {% for pkg in index.packages %}
+    <div class="pkg">
+      <div><a href="{{ pkg.package }}">📦 {{ pkg.package }}</a></div>
+      {% for attest in pkg.attestations %}
+        <div><a href="{{ attest }}">🧾 {{ attest }}</a></div>
+      {% else %}
+        <div>⚠️ no attestations found</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>⚠️ No packages found.</p>
+  {% endfor %}
+{% endblock %}

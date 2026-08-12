@@ -1,0 +1,5 @@
+# IDE junk
+/.idea/
+
+# Python venv
+/.venv/

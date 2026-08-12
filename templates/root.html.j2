@@ -1,0 +1,21 @@
+{% extends "base.html.j2" %}
+{% block title %}Package Repo{% endblock %}
+{% block content %}
+  <h1>Package Repo</h1>
+
+  <h2>Architectures</h2>
+  <ul>
+    {% for arch in index.arches %}
+      <li><a href="{{ arch }}/">💻 {{ arch }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h2>Signing keys</h2>
+  <ul>
+    {% for key in index.signing_keys %}
+      <li><a href="{{ key }}">🔑 {{ key }}</a></li>
+    {% else %}
+      <li>⚠️ No signing keys found.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
