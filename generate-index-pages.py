@@ -13,7 +13,8 @@ from typing import Final, Optional
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 import typer
 
-TEMPLATES_DIR: Final[Path] = Path("templates")
+SCRIPT_DIR: Final[Path] = Path(__file__).resolve().parent
+TEMPLATES_DIR: Final[Path] = SCRIPT_DIR / "templates"
 
 
 @dataclass(frozen=True, slots=True)
