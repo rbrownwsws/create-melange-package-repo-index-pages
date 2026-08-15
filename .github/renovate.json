@@ -1,8 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": [
+    "config:best-practices"
+  ],
   "pep723": {
-    "managerFilePatterns": ["*.py"]
+    "managerFilePatterns": [
+      "*.py"
+    ]
   },
   "lockFileMaintenance": {
     "enabled": true
