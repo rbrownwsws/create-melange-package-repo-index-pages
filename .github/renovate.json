@@ -10,5 +10,16 @@
   },
   "lockFileMaintenance": {
     "enabled": true
-  }
+  },
+  "packageRules": [
+    {
+      "description": "Action deps need to bump version",
+      "matchFileNames": [
+        ".tool-versions",
+        "*.py",
+        "*.py.lock"
+      ],
+      "semanticCommitType": "fix"
+    }
+  ]
 }
