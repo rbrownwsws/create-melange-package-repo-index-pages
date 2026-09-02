@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/compare/v1.0.3...v1.0.4) (2026-09-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency uv to v0.12.9 ([#15](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/issues/15)) ([ad3c07e](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/commit/ad3c07e800cabfe4e5c014f4b94bc11dbac3fb96))
+
 ## [1.0.3](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/compare/v1.0.2...v1.0.3) (2026-09-01)
 
 
