@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.11](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/compare/v1.0.10...v1.0.11) (2026-09-23)
+
+
+### Bug Fixes
+
+* **deps:** update astral-sh/setup-uv action to v10.2.0 ([#34](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/issues/34)) ([4013e0e](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/commit/4013e0e7f4defb0daa7d1c8f2459fb37b8ce7208))
+* **deps:** update dependency uv to v0.12.17 ([#32](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/issues/32)) ([2b8aec2](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/commit/2b8aec27d5277cb552421123fcb258b0b12ca727))
+* **deps:** update dependency uv to v0.12.18 ([#35](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/issues/35)) ([d1c2bc6](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/commit/d1c2bc626609c72fea7ef2ba01a90b7bd86034db))
+
 ## [1.0.10](https://github.com/rbrownwsws/create-melange-package-repo-index-pages/compare/v1.0.9...v1.0.10) (2026-09-18)
 
 
